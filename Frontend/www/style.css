@@ -1,15 +1,33 @@
 body {
     background-color: #fffff6;
 }
+.buy-content {
+    width: 100%;
+    display: flex;
+}
+
+.panel-buy {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 25%;
+    background-color: white;
+    z-index: 9999;
+}
+
+.content {
+    width: 65%;
+}
 
 .cart {
     position: fixed;
     display: flex;
-    width: 100%;
+    width: 75%;
     height: 15%;
     top: 0;
     background-color: #333331;
-    z-index: 9999;
+    z-index: 9998;
 }
 
 .badge {
@@ -143,6 +161,52 @@ body {
     border: none;
     cursor: pointer;
 }
+
+.footer {
+    background-color: white;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.badge-discount {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 9999;
+}
+
+.badge-rectangle {
+    position: fixed;
+    bottom: 0;
+    left: 10px;
+    background-color: #e4872c;
+    color: white;
+    padding: 11px;
+    font-weight: bold;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.badge-rectangle span:last-child {
+    margin-top: 5px;
+}
+
+.badge-rectangle img {
+    position: absolute;
+    top: -7px;
+    right: -1px;
+    height: 11px;
+}
+
+
 
 p1, p2, p3 {
     color: #a1a1a1;
