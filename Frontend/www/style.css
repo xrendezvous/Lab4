@@ -1,0 +1,47 @@
+body {
+    background-color: #fffff6;
+}
+
+.cart {
+    width: 1536px;
+    background-color: #333331;
+    display: flex;
+}
+
+.badge {
+    background-color: #e4872c;
+    width: 10%;
+    margin-right: 30px;
+    margin-left: 10px;
+    border-radius: 0;
+    border: 3px #b86115;
+    background-image: url("assets/images/discount.svg");
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: contain;
+
+}
+
+.site-info {
+    width: 90%;
+}
+
+.top-panel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid gray;
+    padding: 10px;
+}
+
+.bottom-panel {
+    text-align: center;
+}
+
+p1, p2, p3 {
+    color: #a1a1a1;
+}
+
+h4 {
+    color: white;
+}
