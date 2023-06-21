@@ -111,11 +111,39 @@ body {
     margin-right: 10px;
 }
 
-p5 {
-    font-size: 40px;
-    font-family: Arial;
-    font-weight: bold;
+.pizza-size-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 40px;
 }
+
+.thumbnail .pizza-size-wrapper1 {
+    display: flex;
+    align-items: center;
+}
+
+.pizza-price {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 40px;
+}
+
+.buttons-buy {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 27px;
+}
+
+.thumbnail .btn-primary,
+.thumbnail .btn-default {
+    background-color: #f5970d;
+    color: white;
+    border-radius: 3px;
+    padding: 7px 10px;
+    border: none;
+    cursor: pointer;
+}
+
 p1, p2, p3 {
     color: #a1a1a1;
 }
@@ -128,8 +156,4 @@ h3 {
     color: white;
     font-size: 20px;
     font-family: Arial;
-}
-
-p4 {
-    color: orange;
 }
