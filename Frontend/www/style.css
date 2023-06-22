@@ -11,14 +11,14 @@ body {
     top: 0;
     right: 0;
     bottom: 0;
-    width: 25%;
+    width: 20%;
     background-color: white;
     flex-direction: column;
     z-index: 9999;
 }
 
 .content {
-    width: 70%;
+    width: 80%;
     float: left;
 }
 
@@ -177,6 +177,7 @@ body {
 
 .site-info {
     width: 90%;
+
 }
 
 .top-panel {
@@ -319,7 +320,7 @@ img {
 }
 
 .footer {
-    background-color: white;
+    background-color: lightgray;
     width: 100%;
     padding: 20px 0;
     text-align: center;
@@ -343,12 +344,19 @@ img {
     left: 10px;
     background-color: #e4872c;
     color: white;
-    padding: 11px;
+    padding: 8px;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 12px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    max-width: 150px;
+    max-height: 100px;
+    overflow: visible;
+}
+
+.badge-rectangle p {
+    margin: 0;
 }
 
 .badge-rectangle span:last-child {
@@ -358,7 +366,7 @@ img {
 .badge-rectangle img {
     position: absolute;
     top: -7px;
-    right: -1px;
+    right: 0px;
     height: 11px;
 }
 
