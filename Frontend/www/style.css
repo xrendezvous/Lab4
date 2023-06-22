@@ -237,11 +237,19 @@ body {
 .types-pizza {
     background-color: #fffff6;
     padding: 10px;
-    margin: 5px auto 0; /* Змінено */
+    margin: 5px auto 0;
     max-width: 960px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+}
+
+.pizzas-label {
+    font-size: 18px;
+    font-family: Arial;
+    color: #e4872c;
+    padding: 7px 12px;
+    margin: 5px;
 }
 
 .all-pizzas-label {
@@ -252,10 +260,35 @@ body {
     margin-right: 10px;
 }
 
+.container {
+   display: flex;
+    flex-wrap: wrap;
+}
+.row {
+    width: 100%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 600px) {
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
 .pizza-size-wrapper {
     display: flex;
     justify-content: space-between;
     margin: 0 40px;
+}
+
+.pizza-size-wrapper img {
+    width: 20px;
+    height: 20px;
 }
 
 .thumbnail .pizza-size-wrapper1 {
