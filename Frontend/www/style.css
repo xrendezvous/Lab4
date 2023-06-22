@@ -2,22 +2,145 @@ body {
     background-color: #fffff6;
 }
 .buy-content {
-    width: 100%;
-    display: flex;
+    overflow: hidden;
 }
 
 .panel-buy {
     position: fixed;
+    display: flex;
     top: 0;
     right: 0;
     bottom: 0;
     width: 25%;
     background-color: white;
+    flex-direction: column;
     z-index: 9999;
 }
 
 .content {
-    width: 65%;
+    width: 70%;
+    float: left;
+}
+
+.get-order {
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.get-order .pizza-amount {
+    background-color: orange;
+    color: white;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+
+.get-order .clear-order {
+    text-align: right;
+    margin-left: auto;
+}
+
+.count {
+    background-color: #f5f5f5;
+    padding: 20px;
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
+.count .order {
+    background-color: #f5f5f5;
+    padding: 10px 0;
+    position: relative;
+}
+
+.count .order::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: gray;
+}
+
+.pay-order {
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.order-info {
+    display: flex;
+    align-items: center;
+}
+
+.order-button {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.pay-order span:first-child {
+    margin-right: 35px;
+}
+
+.pay-order span:last-child {
+    margin-left: 35px;
+}
+
+.pay-order button.buy-order {
+    background-color: orange;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 7px 15px;
+    text-align: center;
+    width: 100%;
+}
+
+.count .order .characteristics {
+    display: flex;
+    align-items: center;
+}
+
+.count .order .buttons {
+    display: flex;
+    align-items: center;
+}
+
+.count .order .buttons button {
+    border: none;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+
+.count .order .buttons .minus {
+    background-color: red;
+    color: white;
+}
+
+.count .order .buttons .plus {
+    background-color: green;
+    color: white;
+}
+
+.count .order .buttons .cancel {
+    background-color: gray;
+    color: orange;
 }
 
 .cart {
