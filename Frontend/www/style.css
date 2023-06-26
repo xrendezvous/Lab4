@@ -2,7 +2,7 @@ body {
     background-color: #fffff6;
 }
 .buy-content {
-    overflow: hidden;
+    overflow: auto;
 }
 
 .panel-buy {
@@ -11,10 +11,12 @@ body {
     top: 0;
     right: 0;
     bottom: 0;
-    width: 20%;
+    width: 100%;
+    max-width: 20%;
     background-color: white;
     flex-direction: column;
     z-index: 9999;
+    overflow: auto;
 }
 
 .content {
@@ -110,6 +112,11 @@ body {
     align-items: center;
 }
 
+.characteristics img {
+    width: 20px;
+    height: 20px;
+}
+
 .count .order .buttons {
     display: flex;
     align-items: center;
@@ -120,6 +127,8 @@ body {
     border-radius: 50%;
     width: 24px;
     height: 24px;
+    min-width: 24px;
+    min-height: 24px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -141,12 +150,20 @@ body {
 .count .order .buttons .cancel {
     background-color: gray;
     color: orange;
+    margin-left: 10px;
 }
 
+@media only screen and (min-width: 550px) {
+    .panel-buy {
+        width:auto;
+        max-width:none;
+    }
+}
 .cart {
     position: fixed;
     display: flex;
-    width: 75%;
+    width: 80%;
+    max-width: 1285px;
     height: 15%;
     top: 0;
     background-color: #333331;
@@ -154,7 +171,7 @@ body {
 }
 
 .badge {
-    position: relative; /* Додаємо позицію relative для відносного позиціювання */
+    position: relative;
     background-color: #e4872c;
     width: 10%;
     margin-right: 30px;
@@ -163,21 +180,23 @@ body {
     border: 3px #b86115;
 }
 
-.badge::after {
-    content: "";
-    position: absolute; /* Використовуємо абсолютне позиціювання */
-    bottom: -30px; /* Зміщуємо вниз на 20 пікселів */
-    right: 0px; /* Заціплюємо до правого краю */
-    background-image: url("assets/images/discount1.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 30px; /* Задаємо висоту для видимості зображення */
-    width: 149px; /* Задаємо ширину для видимості зображення */
+.badge p {
+    margin: 0;
+}
+
+.badge span:last-child {
+    margin-top: 5px;
+}
+
+.badge img {
+    position: absolute;
+    bottom: -10px;
+    right: 0px;
+    height: 15px;
 }
 
 .site-info {
     width: 90%;
-
 }
 
 .top-panel {
@@ -230,6 +249,8 @@ body {
     border-radius: 50%;
     width: 24px;
     height: 24px;
+    min-width: 24px;
+    min-height: 24px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -385,3 +406,41 @@ h3 {
     font-size: 20px;
     font-family: Arial;
 }
+@media screen and (max-width: 1287px) {
+    .cart {
+        width: 77%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .cart {
+        width: 68%;
+    }
+    .cart p3 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .cart {
+        width: 59%;
+    }
+    .cart p3 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .cart {
+        width: 80%
+    }
+    .cart p2 {
+        display: none;
+    }
+}
+@media screen and (max-width: 480px) {
+    .cart p2 {
+        display: none;
+    }
+}
+
