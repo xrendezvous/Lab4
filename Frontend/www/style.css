@@ -171,7 +171,7 @@ body {
 
 @media only screen and (min-width: 550px) {
     .panel-buy {
-        width:auto;
+        width: auto;
         max-width: none;
     }
 }
@@ -532,12 +532,6 @@ h3 {
 @media screen and (max-width: 170px) {
     .badge p {
         font-size: 8px ;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .badge-rectangle {
-        width: 10%;
     }
 }
 
